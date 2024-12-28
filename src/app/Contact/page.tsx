@@ -1,9 +1,6 @@
 "use client"
 import {useState} from 'react';
 import React from 'react'
-import { MdEmail } from "react-icons/md";
-import { FaFacebook } from "react-icons/fa";
-import { FaPhoneAlt } from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
