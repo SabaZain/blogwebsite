@@ -25,7 +25,7 @@ const Relationships = () => {
         <p className='text-center text-[14px] font-normal'>Family relationships provide a strong 
         <br/>foundation of love, trust, and support,
         <br/> crucial for personal well-being. They 
-        <br/>significantly influence one's lifestyle by 
+        <br/>significantly influence lifestyle by 
         <br/> offering emotional stability, guidance,
         <br/> and a sense of belonging.</p>
       </div>
