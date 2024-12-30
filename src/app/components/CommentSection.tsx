@@ -49,28 +49,32 @@ const CommentSection = () => {
 
   return (
     <div className='p-6'>
-    <h1 className='text-2xl font-bold'>Comments</h1>
+    <h1 className='text-2xl mt-4 font-bold'>Comments</h1>
     <form onSubmit={handleSubmit} className='mb-6'>
         <div>
             <label className='text-gray-800 font-bold mb-2'>Name: </label>
+            <div>
             <input
              type="text"
             value={isEditing !== null ? editName :name}
             onChange={(e) => (isEditing !== null ? setEditName(e.target.value) : setName(e.target.value))}
             required
-            className='p-2 m-6 border-black'
+            className='p-2 border-black mb-4'
             />
+            </div>
         </div>
-
-        <div>
+       <div>
             <label className='text-gray-800 font-bold mb-2'>Comment: </label>
+            <div>
             <textarea
             value={isEditing !== null ? editComment : comment}
             onChange={(e) => (isEditing !== null ? setEditComment(e.target.value) : setComment(e.target.value))}
             required
             className='p-2 border-black'
             />
+            </div>
         </div>
+        
         <button 
         type="submit"
         className='bg-black text-white p-2 rounded-md mt-3'
@@ -94,7 +98,7 @@ const CommentSection = () => {
                 <p>{commentData.comment}</p>
             <button
             onClick={() => handleEdit(index)}
-            className='bg-black text-white p-2 rounded-md'
+            className='bg-black text-white p-2 m-2 rounded-md'
             >
             Edit
             
