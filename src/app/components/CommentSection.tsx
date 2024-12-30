@@ -95,7 +95,7 @@ const CommentSection = () => {
         {comments.map((commentData, index) => (
             <div key={index} className='bg-slate-500 p-2'>
                 <p>{commentData.name}</p>
-                <p>{commentData.comment}</p>
+                <p className="text-wrap">{commentData.comment}</p>
             <button
             onClick={() => handleEdit(index)}
             className='bg-black text-white p-2 m-2 rounded-md'
