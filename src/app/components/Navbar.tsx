@@ -32,7 +32,7 @@ const Navbar = () => {
 
     {isOpen && (
         <div className='md:hidden lg:hidden'> 
-        <ul className='bg-second flex flex-col gap-4'>
+        <ul className='bg-second flex flex-col gap-4 p-2'>
         <li className='font-semibold hover:text-first'><Link href='/' onClick={() => setIsOpen(false)}>Home</Link></li>
         <li className='font-semibold hover:text-first'><Link href='About' onClick={() => setIsOpen(false)}>About</Link></li>
         <li className='font-semibold hover:text-first'><Link href='Blog-Category' onClick={() => setIsOpen(false)}>Blogs Category</Link></li>
