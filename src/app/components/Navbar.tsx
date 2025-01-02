@@ -12,7 +12,7 @@ const Navbar = () => {
     };
   return (
     <div className=" bg-first">
-    <div className='flex justify-start align items-center gap-80'>
+    <div className='flex justify-around align items-center'>
       <div className='flex'>
       <Image src="/Image/lifestylelogo.jpg" alt="logo" width={60} height={60} className='rounded-full p-2' />
       <h1 className='p-4 text-xl text-second font-bold '>LifeStyle</h1>
