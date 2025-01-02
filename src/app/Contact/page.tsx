@@ -36,7 +36,7 @@ const ContactPage = () => {
       <h1 className='text-3xl text-center font-bold p-10'>Contact Us</h1>
       <p className='text-xl text-center font-semibold'>We are always here to assist you. Feel free to contact us!</p>
       <form onSubmit={handleSubmit} className='w-full max-w-xl'>
-              <div className='flex flex-col gap-1 ml-2'>
+              <div className='flex flex-col gap-1 ml-1'>
               <label htmlFor='name'>Name</label>
               <input 
               type='text'
@@ -47,7 +47,7 @@ const ContactPage = () => {
               required
               />
             </div>
-            <div className='flex flex-col gap-1 ml-2'>
+            <div className='flex flex-col gap-1 ml-1'>
             <label htmlFor='email'>Email</label>
               <input 
               type='email'
@@ -58,7 +58,7 @@ const ContactPage = () => {
               required
               />
             </div>
-            <div className='flex flex-col gap-1 ml-2'>
+            <div className='flex flex-col gap-1 ml-1'>
             <label htmlFor='msg'>Message</label>
             <textarea
             className='h-[150px] w-[350px] bg-gray-400 border border-black rounded-md p-1' 
